@@ -75,6 +75,7 @@ public class SignUpActivity extends AppCompatActivity {
         loginSign.setOnClickListener(v -> {
             Intent loginIntent = new Intent(SignUpActivity.this, LoginActivity.class);
             startActivity(loginIntent);
+            finish();
         });
     }
 
