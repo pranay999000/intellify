@@ -54,6 +54,7 @@ public class LoginActivity extends AppCompatActivity {
         signUpButton.setOnClickListener(v -> {
             Intent signUpIntent = new Intent(LoginActivity.this, SignUpActivity.class);
             startActivity(signUpIntent);
+            finish();
         });
 
         progressBar = findViewById(R.id.loginProgressId);
